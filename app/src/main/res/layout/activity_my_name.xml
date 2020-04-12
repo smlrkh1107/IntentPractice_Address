@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MyNameActivity">
+    tools:context=".MyNameActivity"
+    android:orientation="vertical">
     
     <LinearLayout
         android:padding="20dp"
@@ -22,15 +23,41 @@
 
         <EditText
             android:id="@+id/editMyAge"
-            android:layout_marginBottom="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="생년 월일 입력(ex.1988)"/>
-        <Button
-            android:id="@+id/nameBtn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="입력 완료"/>
-        
     </LinearLayout>
+    <LinearLayout
+        android:padding="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="주소입력"
+            android:textSize="18sp"/>
+        <Button
+            android:id="@+id/findAddressBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="주소 입력"/>
+        </LinearLayout>
+    <TextView
+        android:padding="20dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/getAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="메인주소 / 상세주소"/>
+    <Button
+        android:id="@+id/nameBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="입력 완료"/>
+
+
+
 </LinearLayout>

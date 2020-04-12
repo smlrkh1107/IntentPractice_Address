@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyAddressActivity"
+    android:orientation="vertical">
+    <LinearLayout
+        android:padding="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/mainAddressEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="주소입력"
+            android:singleLine="true"/>
+        <EditText
+            android:id="@+id/detailAddressEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="상세 주소입력"
+            android:singleLine="true"/>
+        <Button
+            android:id="@+id/myAddressBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="입력 완료"/>
+
+
+    </LinearLayout>
+    
+    
+</LinearLayout>
