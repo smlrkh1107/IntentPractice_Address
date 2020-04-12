@@ -1,4 +1,5 @@
 <resources>
-    <string name="app_name">IntentPractice_Address</string>
-    <string name="마이페이지">마이페이지</string>
+    <string name="app_name">내 정보화면</string>
+    <string name="mypage">마이페이지</string>
 </resources>
+
