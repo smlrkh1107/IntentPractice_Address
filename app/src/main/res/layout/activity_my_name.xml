@@ -16,15 +16,21 @@
             android:layout_marginTop="30dp"
             android:layout_marginBottom="20dp"
             android:layout_width="match_parent"
-            android:layout_height="70sp"
+            android:layout_height="wrap_content"
             android:hint="이름 입력"
             android:singleLine="true"/>
+
+        <EditText
+            android:id="@+id/editMyAge"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="생년 월일 입력(ex.1988)"/>
         <Button
             android:id="@+id/nameBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="입력 완료"/>
-        
         
     </LinearLayout>
 </LinearLayout>

@@ -11,9 +11,9 @@ class MyPageActivity : AppCompatActivity() {
         setContentView(R.layout.activity_my_page)
 
         val  name = intent.getStringExtra("username")
-        userNameTxt.text = name///이거어딨어
-
-
-
+        userNameTxt.text = "${name}님 안녕하세요!"
+        val age = intent.getIntExtra("userage", -1)
+        // getInt는 Default값을 무조건 정해줘야함
+        userAgeTxt.text = "${name}(${age})님의 또래가 좋아하는 추천목록을 준비했어요!"
     }
 }

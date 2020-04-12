@@ -13,9 +13,11 @@ class MyNameActivity : AppCompatActivity() {
 
         nameBtn.setOnClickListener{
             val inputName = editMyName.text.toString()
-            val myIntent = Intent(this, MyPageActivity::class.java)
-                myIntent.putExtra("username", inputName + " 님 안녕하세요.")
+            val inputBirth = editMyAge.text.toString().toInt()
 
+            val myIntent = Intent(this, MyPageActivity::class.java)
+                myIntent.putExtra("username", inputName)
+                myIntent.putExtra("userage", 2020-inputBirth +1)
             startActivity(myIntent)
         }
 
