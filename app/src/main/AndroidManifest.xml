@@ -9,19 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        //theme를 DarkActionBar -> NoActionBar 하면 위에 뜨는게 없어지죠.
-        <activity android:name=".MyPageActivity">
-        </activity>
-
-        <activity android:name=".MainActivity">
+        <activity android:name=".MyNameActivity">
             // intent-filter 이게 액티비티 사이에있으면
             //이걸 실행해줘, (첫페이지) 라는 뜻
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".MyPageActivity"></activity>
+        <activity android:name=".MainActivity"></activity>
     </application>
 
 </manifest>
